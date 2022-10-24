@@ -23,10 +23,11 @@ class EnergyRelease {
 
     try {
       mass = Double.parseDouble(massString);
-      energy = mass * speedLight;
-      System.out.println(mass + " kg of mass would produce " + energy + " of energy.");
+      energy = mass * Math.pow(speedLight, 2);
+      System.out.println("\n" + mass + " kg of mass would produce " + energy
+                      + " of energy.");
     } catch (Exception e) {
-      System.out.println("Invalid number!");
+      System.out.println("\nInvalid number!");
     } finally {
       System.out.println("\nDone.");
     }

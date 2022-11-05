@@ -15,7 +15,7 @@ class EnergyRelease {
     String massString;
     double mass = -1;
     double energy = -1;
-    double speedLight = 2.998 * Math.pow(10, 8);
+    final double speedLight = 2.998 * Math.pow(10, 8);
     String logLength = "";
     Scanner myObj = new Scanner(System.in);
     System.out.print("Enter the mass of an object in kilograms: ");
